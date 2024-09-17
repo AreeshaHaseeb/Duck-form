@@ -47,7 +47,7 @@ html, body {
 }
 .message{
     width: 400px;
-    height: 100px
+    height: 100px;
 }
 .name input,
 .email input,
@@ -77,7 +77,7 @@ input:focus {
 img {
     position: absolute;
     top: 20px;
-    left: 47%;
+    left: 50%;
     z-index: 1;
     width: 50%;
     height: auto;
@@ -103,7 +103,7 @@ img {
 }
 .form-info div:hover {
     background-color: rgba(243, 243, 242, 0.1);  
-    box-shadow: 0 4px 12px rgba(243, 243, 242, 0.1); 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
     border-radius: 10px;
 }
 .form-container {
@@ -131,9 +131,10 @@ img {
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     font-style: normal;
-    box-shadow: 0 4px 6px #000000
+    box-shadow: 0 4px 6px #000000;
+    text-align: center;
 }
 .button:hover {
-    background-color: #00ff4c; 
-    box-shadow: 0 6px 8px rgba(243, 243, 242, 0.1); 
+    background-color: #09872f; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
