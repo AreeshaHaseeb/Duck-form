@@ -18,7 +18,6 @@ html, body {
     width: 100%;
     height: 100vh;
     flex-direction: row-reverse;
-
 }
 
 .container {
@@ -38,32 +37,74 @@ html, body {
     width: 400px;
     height: 72px;
 }
-.name input {
-    width: 100%; 
-    height: 100%;}
 .email {
     width: 160px;
     height: 72px;
 }
+.message-regarding{
+    width: 213px;
+    height: 72px;
+}
+.message{
+    width: 400px;
+    height: 100px
+}
+.name input,
+.email input,
+.message-regarding input,
+.message input { 
+    border: none;
+    border-bottom: 2px solid #9DBEBB;
+    background-color: transparent;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+/* using text area for message wasn't working for some reason so used input instead */
+input::placeholder {
+    color: #FEFFFF;
+    background-color: transparent;
+    letter-spacing: 5px;
+}
+
+input:focus {
+    outline-width: 2px;
+    outline-style: solid;
+    outline-color: #02ffff;
+}
+
 img {
     position: absolute;
     top: 20px;
-    left: 50%;
+    left: 47%;
     z-index: 1;
     width: 50%;
     height: auto;
 }
-.form-info{
+
+.form-info {
     display: flex;
     flex-direction: column;
     gap: 30px;
     align-items: flex-start;
     width: 600px;
 }
+
 .form-info div {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 15px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #FEFFFF;
+}
+.form-info div:hover {
+    background-color: rgba(243, 243, 242, 0.1);  
+    box-shadow: 0 4px 12px rgba(243, 243, 242, 0.1); 
+    border-radius: 10px;
 }
 .form-container {
     display: flex;
@@ -73,7 +114,26 @@ img {
     width: 600px;
     margin-left: 65px;
 }
-.button-container{
+
+.button-container {
     margin-left: 164px;
-    margin-top: 56px;
+    margin-top: 46px;
+}
+.button{
+    background-color: #468189;
+    color: #FFFFFF;
+    border-radius: 40px;
+    padding: 10px 20px; 
+    font-size: 18px;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    box-shadow: 0 4px 6px #000000
+}
+.button:hover {
+    background-color: #00ff4c; 
+    box-shadow: 0 6px 8px rgba(243, 243, 242, 0.1); 
 }

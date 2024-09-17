@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <div class="form-container">
                 <div class="form-info">            
                     <div class="name">
-                        <label for="text">FULL NAME</label>
+                        <label for="name">FULL NAME</label>
                         <input type="text" id="name" name="name" placeholder="" required autofocus>
                     </div>
                     <div class="email">
@@ -29,11 +30,11 @@
                     </div>
                     <div class="message">
                         <label for="message">MESSAGE</label>
-                        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                        <input type="text" id="message" name="message" placeholder="Your message" required>
                     </div>
                 </div>
                 <div class="button-container">
-                    <button type="submit" class="button" disabled>SEND MESSAGE</button>
+                    <button type="submit" class="button">SEND MESSAGE</button>
                 </div>
             </div>
         </div>
